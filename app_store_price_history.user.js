@@ -13,6 +13,9 @@
     var title = document.title;
     var app_name = document.getElementsByTagName('h1')[0].innerHTML;
     app_name = app_name.replace(' — ', ' - ').split(' - ')[0];
+    app_name = app_name.replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">");
+    app_name = app_name.replace(/&quot;/g, "\"").replace(/&#039;/g, "'").replace(/&nbsp;/g, " ");
+
     var platform = 'ios';
     if (title.indexOf('Mac App Store') == 0) {
         platform = 'mac';
