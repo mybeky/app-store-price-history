@@ -5,7 +5,7 @@
 // @include       http://itunes.apple.com/*
 // @description   Add price history table in App Store page
 // @icon          http://cl.ly/FqTY/appshopper.png
-// @version       0.1
+// @version       0.1.1
 // ==/UserScript==
 
 
